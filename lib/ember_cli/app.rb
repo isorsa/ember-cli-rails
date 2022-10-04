@@ -8,7 +8,7 @@ module EmberCli
   class App
     attr_reader :name, :options, :paths
 
-    def initialize(name, **options)
+    def initialize(name, options)
       @name = name.to_s
       @options = options
       @paths = PathSet.new(
